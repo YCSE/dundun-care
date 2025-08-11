@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>든든케어 - 가족간병보험 전문 등록업체 | 모든 보험사 승인</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="전문간병사업자코드 보유, 모든 보험회사 가족간병 승인 가능. 대구/경북 간병서비스 1위. 전화 한 통으로 간편 상담 010-5342-0200">
+    <meta name="keywords" content="가족간병보험,간병인신청,병원동행,대구간병,전문간병사업자,간병보험신청,가족간병등록">
+    <meta name="author" content="든든케어">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="든든케어 - 가족간병보험 전문">
+    <meta property="og:description" content="보험사 승인 전문간병사업자, 가족간병보험 신청부터 서류발급까지">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dunduncare.com">
+    <meta property="og:image" content="/images/og-image.jpg">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts - Noto Sans KR -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "든든케어",
+        "description": "가족간병보험 전문 서비스",
+        "telephone": "010-5342-0200",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "대구광역시",
+            "addressCountry": "KR"
+        },
+        "areaServed": ["대구광역시", "경상북도"],
+        "openingHours": "Mo-Fr 09:00-18:00"
+    }
+    </script>
+</head>
+<body class="font-['Noto_Sans_KR'] text-gray-900">
+    
+    <!-- Header Navigation -->
+    <header id="header" class="fixed w-full bg-white shadow-sm z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto">
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center justify-between px-6 h-20">
+                <div class="flex items-center">
+                    <!-- 로고 이미지 영역 -->
+                    <a href="#" class="flex items-center">
+                        <img src="assets/dundun.png" 
+                             alt="든든케어 로고" 
+                             class="h-14"
+                             data-image="logo-header">
+                    </a>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="#about" class="hover:text-green-700 transition">회사소개</a>
+                    <a href="#insurance" class="hover:text-green-700 transition">가족간병보험</a>
+                    <a href="#caregiver" class="hover:text-green-700 transition">간병인신청</a>
+                    <a href="#companion" class="hover:text-green-700 transition">병원동행</a>
+                    <a href="tel:010-5342-0200" class="flex items-center bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                        </svg>
+                        010-5342-0200
+                    </a>
+                </div>
+            </nav>
+            
+            <!-- Mobile Navigation -->
+            <nav class="md:hidden flex items-center justify-between px-4 h-16">
+                <!-- 모바일 로고 이미지 영역 -->
+                <a href="#" class="flex items-center">
+                    <img src="assets/dundun.png" 
+                         alt="든든케어 로고" 
+                         class="h-9"
+                         data-image="logo-mobile">
+                </a>
+                <a href="tel:010-5342-0200" class="bg-orange-500 text-white px-4 py-2 rounded-full text-sm">
+                    전화상담
+                </a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-20">
+        <!-- 히어로 배경 이미지 영역 (1920x800px) -->
+        <img src="assets/hero-background.jpg" 
+             alt="간병 서비스 배경" 
+             class="absolute inset-0 w-full h-full object-cover hero-bg-image"
+             data-image="hero-background">
+        <!-- 투명한 흰색 오버레이 (85% opacity) -->
+        <div class="absolute inset-0 bg-white/[0.85] hero-overlay"></div>
+        <div class="relative max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                <span class="text-orange-500">가족간병보험</span> 등록 전문
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-700">
+                모든 보험회사 승인 가능한 전문간병사업자코드 보유
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="tel:010-5342-0200" class="inline-flex items-center justify-center bg-orange-500 text-white text-lg md:text-xl px-8 py-4 rounded-full hover:bg-orange-600 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                    </svg>
+                    지금 바로 상담하기
+                </a>
+                <a href="#process" class="inline-flex items-center justify-center bg-white text-green-700 text-lg md:text-xl px-8 py-4 rounded-full border-2 border-green-700 hover:bg-green-50 transition shadow-lg">
+                    신청 절차 안내
+                </a>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- Trust Building Section -->
+    <section id="trust" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                왜 <span class="text-green-700">든든케어</span>인가?
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-green-50 rounded-2xl p-8 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-20 h-20 bg-green-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">전문사업자코드 보유</h3>
+                    <p class="text-gray-600">
+                        모든 보험회사가 인정하는<br>
+                        전문간병사업자코드 보유
+                    </p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-green-50 rounded-2xl p-8 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-20 h-20 bg-green-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">보험사 경험 10년 이상</h3>
+                    <p class="text-gray-600">
+                        오랜 경험과 노하우로<br>
+                        빠르고 정확한 처리
+                    </p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-green-50 rounded-2xl p-8 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-20 h-20 bg-green-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">즉시 처리 당일 승인</h3>
+                    <p class="text-gray-600">
+                        복잡한 절차 없이<br>
+                        당일 처리 원칙
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-gray-50 rounded-2xl p-8 text-center">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    <span class="font-bold text-green-700">대구사랑간병협회</span>는 보험회사와 오랜 거래경험이 있고<br class="hidden md:block">
+                    보험회사에서 원하는 전문간병사업자코드를 가지고 있기 때문에<br class="hidden md:block">
+                    <span class="font-semibold">어떤 보험회사에 가입하셨어도 승인받는데 문제가 없습니다.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                제공 서비스
+            </h2>
+            
+            <!-- Service 1: 가족간병보험 -->
+            <div id="insurance" class="mb-16">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2 p-8 md:p-12">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                    <svg class="w-8 h-8 text-green-700" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-bold">가족간병보험 신청</h3>
+                            </div>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>가족이 직접 간병해도 보험금 수령 가능</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>모든 보험회사 가족간병 승인 가능</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>필요 서류 안내 및 작성 도움</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>보험금 청구 절차 전체 지원</span>
+                                </li>
+                            </ul>
+                            <a href="tel:010-5342-0200" class="inline-flex items-center bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                </svg>
+                                지금 신청하기 ☎ 010-5342-0200
+                            </a>
+                        </div>
+                        <div class="md:w-1/2 relative min-h-[400px] bg-cover bg-center" 
+                             style="background-image: url('assets/family.png');"
+                             data-image="service-family">
+                            <div class="absolute inset-0 bg-gradient-to-br from-green-100/20 to-green-200/20"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 2: 간병인 신청 -->
+            <div id="caregiver" class="mb-16">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2 relative min-h-[400px] bg-cover bg-center" 
+                             style="background-image: url('assets/service-caregiver-new.jpeg');"
+                             data-image="service-caregiver">
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-100/20 to-blue-200/20"></div>
+                        </div>
+                        <div class="md:w-1/2 p-8 md:p-12">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                    <svg class="w-8 h-8 text-blue-700" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-bold">전문 간병인 신청</h3>
+                            </div>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-blue-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>대구/경북 지역 전문 간병인 파견</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-blue-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>병원별 맞춤 간병 서비스</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-blue-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>보험 청구 서류 자동 처리</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-blue-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>24시간 긴급 대응 가능</span>
+                                </li>
+                            </ul>
+                            <a href="tel:010-5342-0200" class="inline-flex items-center bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                </svg>
+                                간병인 신청 ☎ 010-5342-0200
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 3: 병원동행 -->
+            <div id="companion" class="mb-16">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2 p-8 md:p-12">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                                    <svg class="w-8 h-8 text-purple-700" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-bold">병원동행 서비스</h3>
+                            </div>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-purple-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>외래 진료 동행 서비스</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-purple-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>검사 및 치료 시 보호자 역할</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-purple-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>의료진 상담 지원</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-purple-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>대구/경북 전 지역 가능</span>
+                                </li>
+                            </ul>
+                            <a href="tel:010-5342-0200" class="inline-flex items-center bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                </svg>
+                                동행 신청 ☎ 010-5342-0200
+                            </a>
+                        </div>
+                        <div class="md:w-1/2 relative min-h-[400px] bg-cover bg-center" 
+                             style="background-image: url('assets/hospital.jpeg');"
+                             data-image="service-companion">
+                            <div class="absolute inset-0 bg-gradient-to-br from-purple-100/20 to-purple-200/20"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Process Section -->
+    <section id="process" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                간편한 신청 절차
+            </h2>
+            <!-- 4개 컬럼 고정 그리드 - 한 줄로 표현 -->
+            <div class="overflow-x-auto pb-4">
+                <div class="grid grid-cols-4 gap-4 md:gap-8 min-w-[800px] md:min-w-0">
+                    <!-- Step 1 -->
+                    <div class="text-center relative process-step">
+                        <div class="w-20 h-20 bg-green-700 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                            1
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold mb-2">전화 상담</h3>
+                        <p class="text-sm md:text-base text-gray-600">010-5342-0200으로<br>간편하게 상담</p>
+                        <!-- 화살표를 CSS로 처리 -->
+                        <div class="process-arrow hidden md:block absolute top-10 -right-4 md:-right-8">
+                            <svg class="w-6 h-6 md:w-8 md:h-8 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="text-center relative process-step">
+                        <div class="w-20 h-20 bg-green-700 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                            2
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold mb-2">서류 안내</h3>
+                        <p class="text-sm md:text-base text-gray-600">필요 서류 안내 및<br>작성 방법 설명</p>
+                        <!-- 화살표 -->
+                        <div class="process-arrow hidden md:block absolute top-10 -right-4 md:-right-8">
+                            <svg class="w-6 h-6 md:w-8 md:h-8 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="text-center relative process-step">
+                        <div class="w-20 h-20 bg-green-700 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                            3
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold mb-2">등록 완료</h3>
+                        <p class="text-sm md:text-base text-gray-600">당일 처리 원칙으로<br>빠른 등록 완료</p>
+                        <!-- 화살표 -->
+                        <div class="process-arrow hidden md:block absolute top-10 -right-4 md:-right-8">
+                            <svg class="w-6 h-6 md:w-8 md:h-8 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="text-center relative">
+                        <div class="w-20 h-20 bg-orange-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                            4
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold mb-2">보험금 수령</h3>
+                        <p class="text-sm md:text-base text-gray-600">보험금 청구 절차<br>전체 지원</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <p class="text-xl text-gray-700 mb-8">
+                    "복잡한 절차 없이 <span class="font-bold text-green-700">전화 한 통</span>으로 모든 상담이 가능합니다"
+                </p>
+                <a href="tel:010-5342-0200" class="inline-flex items-center bg-orange-500 text-white text-xl px-8 py-4 rounded-full hover:bg-orange-600 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                    </svg>
+                    지금 바로 상담받기
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Company Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                대구사랑간병협회
+            </h2>
+            
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="p-8 md:p-12">
+                        <h3 class="text-2xl font-bold mb-6 text-green-700">믿을 수 있는 파트너</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <div>
+                                    <strong>전문간병사업자코드 보유</strong>
+                                    <p class="text-gray-600 mt-1">모든 보험회사에서 인정하는 공식 사업자</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <div>
+                                    <strong>10년 이상 보험회사 협력</strong>
+                                    <p class="text-gray-600 mt-1">오랜 경험과 신뢰로 쌓은 전문성</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <div>
+                                    <strong>대구/경북 지역 1위 간병 서비스</strong>
+                                    <p class="text-gray-600 mt-1">지역 최고의 간병 전문 기관</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-8 md:p-12">
+                        <h3 class="text-xl font-bold mb-4">더 자세한 정보는</h3>
+                        <p class="text-gray-600 mb-6">
+                            블로그에서 더 많은 정보와 후기를 확인하실 수 있습니다.
+                        </p>
+                        <a href="#" class="inline-flex items-center text-green-700 hover:text-green-800 font-semibold">
+                            네이버 블로그 바로가기
+                            <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                        
+                        <div class="mt-8 pt-8 border-t border-gray-200">
+                            <p class="font-bold text-lg mb-2">상담 시간</p>
+                            <p class="text-gray-600">월~금 오전 9시 ~ 오후 6시</p>
+                            <p class="text-gray-600">주말 및 공휴일 휴무</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <!-- 푸터 로고 이미지 영역 -->
+                    <img src="assets/dundun.png" 
+                         alt="든든케어 로고" 
+                         class="h-[72px] mb-4 brightness-0 invert"
+                         data-image="logo-footer">
+                    <p class="text-white font-bold">대구사랑간병협회</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">연락처</h4>
+                    <p class="text-gray-400">전화: 010-5342-0200</p>
+                    <p class="text-gray-400">카카오톡: @든든케어</p>
+                    <p class="text-gray-400">블로그: blog.naver.com/love0200-</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">서비스 지역</h4>
+                    <p class="text-gray-400">대구광역시 전 지역</p>
+                    <p class="text-gray-400">경상북도 전 지역</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>Copyright © 2025 든든케어. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Floating Buttons -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+        <!-- Kakao Button -->
+        <a href="#" class="w-14 h-14 md:w-16 md:h-16 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3C6.48 3 2 6.58 2 10.92c0 2.77 1.84 5.2 4.6 6.6-.2.72-.72 2.64-.82 3.04-.12.5.18.52.38.38.16-.12 2.56-1.72 3.6-2.42.78.12 1.58.18 2.4.18 5.52 0 10-3.58 10-7.92S17.52 3 12 3z"/>
+            </svg>
+        </a>
+        
+        <!-- Phone Button -->
+        <a href="tel:010-5342-0200" class="w-14 h-14 md:w-16 md:h-16 bg-red-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform animate-pulse">
+            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+            </svg>
+        </a>
+    </div>
+    
+    <!-- Mobile Bottom CTA -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-orange-500 p-4 z-30">
+        <a href="tel:010-5342-0200" class="flex items-center justify-center text-white font-bold text-lg">
+            <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+            </svg>
+            지금 바로 전화 상담
+        </a>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
