@@ -2,20 +2,42 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Header Scroll Effect - Improved
+    // Header Scroll Effect - Improved with Touch Detection
     const header = document.getElementById('header');
     let lastScrollTop = 0;
     let didScroll = false;
-    const scrollDelta = 20; // Minimum scroll distance to trigger
+    let isTouching = false;
+    let touchStartY = 0;
+    
+    // Detect touch start
+    document.addEventListener('touchstart', function(e) {
+        isTouching = true;
+        touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+    
+    // Detect touch end
+    document.addEventListener('touchend', function(e) {
+        setTimeout(() => {
+            isTouching = false;
+        }, 100); // Small delay to ensure scroll events complete
+    }, { passive: true });
     
     // Mark that scroll happened
     window.addEventListener('scroll', function() {
-        didScroll = true;
-    });
+        // Only mark scroll if not touching or if it's a significant scroll
+        if (!isTouching) {
+            didScroll = true;
+        }
+    }, { passive: true });
     
     // Check scroll position periodically for better performance
     function hasScrolled() {
+        // Skip if currently touching
+        if (isTouching) return;
+        
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const isMobile = window.innerWidth <= 768;
+        const scrollDelta = isMobile ? 30 : 20; // Larger threshold for mobile
         
         // Make sure they scroll more than delta
         if(Math.abs(lastScrollTop - scrollTop) <= scrollDelta) {
@@ -44,12 +66,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Run hasScrolled() and reset didScroll status
+    // Use different interval for mobile
+    const checkInterval = window.innerWidth <= 768 ? 300 : 250;
     setInterval(function() {
         if (didScroll) {
             hasScrolled();
             didScroll = false;
         }
-    }, 250);
+    }, checkInterval);
     
     // Smooth Scroll for Navigation Links
     const navLinks = document.querySelectorAll('a[href^="#"]');
