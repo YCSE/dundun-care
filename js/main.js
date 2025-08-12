@@ -55,12 +55,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (scrollTop > lastScrollTop && scrollTop > 100) {
             // Scrolling down - hide header
             header.classList.add('hidden');
-        } else {
-            // Scrolling up - show header
-            if(scrollTop + window.innerHeight < document.documentElement.scrollHeight) {
-                header.classList.remove('hidden');
-            }
+        } else if (scrollTop < lastScrollTop) {
+            // Only show header when actively scrolling up (not when scroll stops)
+            header.classList.remove('hidden');
         }
+        // When scroll stops (scrollTop === lastScrollTop), keep current state
         
         lastScrollTop = scrollTop;
     }
