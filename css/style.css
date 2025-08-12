@@ -32,7 +32,7 @@ body {
 
 /* Header Styles */
 #header {
-    transition: all 0.3s ease;
+    transition: all 0.4s ease-in-out;
 }
 
 #header.scrolled {

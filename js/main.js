@@ -2,36 +2,54 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Header Scroll Effect
+    // Header Scroll Effect - Improved
     const header = document.getElementById('header');
     let lastScrollTop = 0;
-    let scrollTimeout;
+    let didScroll = false;
+    const scrollDelta = 5; // Minimum scroll distance to trigger
     
+    // Mark that scroll happened
     window.addEventListener('scroll', function() {
-        clearTimeout(scrollTimeout);
+        didScroll = true;
+    });
+    
+    // Check scroll position periodically for better performance
+    function hasScrolled() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
-        scrollTimeout = setTimeout(() => {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            
-            // Add scrolled class when scrolled down
-            if (scrollTop > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-            
-            // Hide/show header on scroll
-            if (scrollTop > lastScrollTop && scrollTop > 100) {
-                // Scrolling down
-                header.classList.add('hidden');
-            } else {
-                // Scrolling up
+        // Make sure they scroll more than delta
+        if(Math.abs(lastScrollTop - scrollTop) <= scrollDelta) {
+            return;
+        }
+        
+        // Add scrolled class when scrolled down
+        if (scrollTop > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+        
+        // Hide/show header on scroll with improved logic
+        if (scrollTop > lastScrollTop && scrollTop > 100) {
+            // Scrolling down - hide header
+            header.classList.add('hidden');
+        } else {
+            // Scrolling up - show header
+            if(scrollTop + window.innerHeight < document.documentElement.scrollHeight) {
                 header.classList.remove('hidden');
             }
-            
-            lastScrollTop = scrollTop;
-        }, 10);
-    });
+        }
+        
+        lastScrollTop = scrollTop;
+    }
+    
+    // Run hasScrolled() and reset didScroll status
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
     
     // Smooth Scroll for Navigation Links
     const navLinks = document.querySelectorAll('a[href^="#"]');
