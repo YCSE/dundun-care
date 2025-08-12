@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = document.getElementById('header');
     let lastScrollTop = 0;
     let didScroll = false;
-    const scrollDelta = 5; // Minimum scroll distance to trigger
+    const scrollDelta = 20; // Minimum scroll distance to trigger
     
     // Mark that scroll happened
     window.addEventListener('scroll', function() {
